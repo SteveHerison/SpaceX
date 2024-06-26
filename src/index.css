@@ -1,0 +1,7 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.tamanhoVertical {
+  height: calc(100% - 96px);
+}
