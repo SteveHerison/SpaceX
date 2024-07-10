@@ -1,7 +1,7 @@
 import { useState } from "react";
 import BackCrew from "../../assets/crew/background-crew-desktop.jpg";
 import Layout from "../layout";
-import { Crews, bio, role as CrewType } from "./dataCrew";
+import { Crews, type Crew as CrewType } from "./dataCrew";
 
 const Crew: React.FC = () => {
   const [selectedCrew, setSelectedCrew] = useState<CrewType>(Crews[0]);
@@ -35,12 +35,13 @@ const Crew: React.FC = () => {
               </div>
             </div>
 
-            <div className="w-1/2 h-full flex justify-center items-center flex-col">
+            <div className="w-1/2 h-full flex justify-center items-center flex-col relative">
               <img
                 src={selectedCrew.images.png}
                 alt={selectedCrew.name}
                 className="h-auto max-w-full"
               />
+              <div className="absolute bottom-0 w-full h-44 bg-gradient-to-t from-black to-transparent"></div>
             </div>
           </div>
         </div>

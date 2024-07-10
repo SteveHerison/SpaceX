@@ -1,7 +1,10 @@
 import { useState } from "react";
 import TechnologyBackground from "../../assets/technology/background-technology-desktop.jpg";
 import Layout from "../layout";
-import { Technologys, description as TechnologyType } from "./dataTechnology";
+import {
+  Technologys,
+  type Technology as TechnologyType,
+} from "./dataTechnology";
 
 const Technology: React.FC = () => {
   const [selectedTechnology, setSelectedTechnology] = useState<TechnologyType>(
