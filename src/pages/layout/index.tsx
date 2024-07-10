@@ -11,7 +11,7 @@ const Layout: React.FC<LayoutProps> = ({ children, backgroundImage }) => {
       className="h-full w-full bg-cover bg-no-repeat"
       style={{ backgroundImage: `url(${backgroundImage})` }}
     >
-      <div className="pt-36 w-full h-full">{children}</div>
+      <div className="pt-36 w-full h-full text-white">{children}</div>
     </div>
   );
 };

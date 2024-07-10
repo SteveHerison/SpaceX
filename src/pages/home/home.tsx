@@ -6,7 +6,7 @@ const Home = () => {
   return (
     <Layout backgroundImage={homeBackground}>
       <section className="w-full h-full flex items-end justify-center py-32 px-40">
-        <div className="text-white flex">
+        <div className="text-white flex ">
           <div className="flex flex-col w-1/3 justify-center">
             <span
               className="text-xl font-barlow-condensed self-stretch text-light-blue"

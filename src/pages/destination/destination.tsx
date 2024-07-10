@@ -1,11 +1,10 @@
-import { useState } from "react";
+import React, { useState } from "react";
 import Layout from "../layout";
 import BackDestination from "../../assets/destination/background-destination-desktop.jpg";
 import {
   Destinations,
   Destination as DestinationType,
 } from "./dataDestination";
-import destination from ".";
 
 const Destination: React.FC = () => {
   const [selectedDestination, setSelectedDestination] =
@@ -15,7 +14,7 @@ const Destination: React.FC = () => {
     <Layout backgroundImage={BackDestination}>
       <section className="w-full h-full flex items-center justify-center py-12 px-40 text-white">
         <div className="flex flex-col w-full h-full">
-          <h1 className="text-4xl flex gap-3">
+          <h1 className="text-3xl flex gap-3 barlow-condensed">
             <p>01</p> Escolha seu destino
           </h1>
           <div className="flex justify-center items-center w-full h-full gap-8">
@@ -39,7 +38,7 @@ const Destination: React.FC = () => {
                         selectedDestination.name === destination.name
                           ? "border-b-2 pb-2"
                           : "pb-2 hover:border-b-2 border-zinc-600"
-                      } font-barlow-condensed  text-xl`}
+                      } font-barlow-condensed text-xl`}
                     >
                       {destination.name}
                     </button>
@@ -63,11 +62,9 @@ const Destination: React.FC = () => {
                   </div>
                   <div className="w-full text-start">
                     <p className="font-barlow-condensed tracking-[2px]">
-                      {" "}
-                      Est. travel time{" "}
+                      Est. travel time
                     </p>
-
-                    <p className=" text-2xl font-bellefair">
+                    <p className="text-2xl font-bellefair">
                       {selectedDestination.travel}
                     </p>
                   </div>
